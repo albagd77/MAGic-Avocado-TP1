@@ -1,0 +1,32 @@
+Northeast:
+Nueva York
+Boston
+Buffalo-Rochester
+Hartford-Springfield
+Harrisburg-Scranton
+Albany
+
+South:
+Miami-Ft. Lauderdale
+New Orleans-Mobile
+Nashville
+
+Midsouth:
+Houston
+Atlanta
+Charlotte
+
+Midwest:
+
+Great Lakes (incluye Chicago, Detroit, Indianapolis, Columbus, Cincinnati)
+Grand Rapids
+
+West:
+Los Ángeles
+San Francisco (si se incluye)
+Las Vegas
+Denver
+Boise
+
+Southeast:
+Jacksonville
