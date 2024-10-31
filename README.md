@@ -6,3 +6,5 @@ Mini Proyecto para el curso Data Scientist. Componentes equipo: Montse, Gustavo 
 Primera evaluación del curso.
 
 Párrafo DESPUÉS del inicial
+
+OTRO párrafo más.
