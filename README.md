@@ -21,9 +21,11 @@ Iniciamos el análisis realizando un EDA (Exploratory Data Analysis) en el trans
 
 ## 1. Series Temporales
 
+Puesto que las mediciones son semanales (4/5) mediciones por mes, al calcular las series temporales para 'AveragePrice' debemos configurarlas con `period=52`.
 
+![Serie Temporal para 'AveragePrice'](./media/01-01_series_temporales.png)
 
-![alt text](image.jpg)
+En la gráfica resultante observamos claramente un patrón repetitivo en la estacionalidad: el precio asciende en primavera y verano, llegando a su máximo en septiembre/octubre, mientras que se baja pronunciadamente en enero/febrero.
 
 
 
