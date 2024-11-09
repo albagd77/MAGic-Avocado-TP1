@@ -25,7 +25,6 @@ Puesto que las mediciones son semanales (4/5) mediciones por mes, al calcular la
 
 ![Serie Temporal para 'AveragePrice'](./media/01-01_series_temporales.png)
 
-En la gráfica resultante observamos claramente un patrón repetitivo en la estacionalidad: el precio asciende en primavera y verano, llegando a su máximo en septiembre/octubre, mientras que se baja pronunciadamente en enero/febrero.
-
+En la gráfica resultante observamos claramente un patrón repetitivo de año en año: bajada de precio en el mes de febrero , así como un pico de subida en los meses de octubre/noviembre. En septiembre se empieza a acabar la temporada de cosecha del aguacate, y por eso es probable que el precio suba en los meses siguientes. Si añadimos el hecho de que en noviembre se celebra el día de Acción de Gracias, en el cual es muy común utilizar aguacate para hacer guacamole en USA, tenemos el terreno abonado para una subida de precios.
 
 
