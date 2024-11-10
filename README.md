@@ -47,7 +47,6 @@ Otro modo de ver esas diferencias entre regiones es mediande un boxplot anual po
 
 ![Boxplot anual de precios por GreaterRegion](./media/02-02_boxplot_precios_anuales_region.png)
 
-
 # (TO DO): gráfica y comentar apartado 01-03
 
 Al evaluar la característica 'Total Volume', filtrando de nuevo por **GreaterRegions**, para ver la tendencia de ventas a lo largo del tiempo, observamos caídas en el volumen de aguacates vendidos just a finales de año, lo cual concuerda con la subida de precio que habíamos observado anteriormente en octubre/noviembre.
@@ -87,6 +86,18 @@ Por otro lado, del estudio por tamaño de bolsa se desprende que las bolsas pequ
 ![Diagrama de barras para el tamaño de bolsa](./media/02-04_barras_bags.png)
 
 ## 3. Elasticidad del precio
+
+Para estudiar la elasticidad de precios, partimos de nuevo únicamente de las filas correspondientes a **GreaterRegions**. 
+
+Al aplicar la función `pct_change()` a las variables 'Total Volume' y 'AveragePrice', de las 2703 filas iniciales para GreaterRegions, obtenemos 1448 filas con una variación porcentual inferior al 0.1%. Esto puede indicar períodos con estabilidad en los precios.
+
+![Elasticidad de precios, por año, en GreaterRegions](./media/03-01_elasticidad_anual_regions.png)
+
+Para simplificar la visualización, calculamos la media por año.
+
+![Elasticidad anual de precios](./media/03-01_elasticidad_anual.png)
+
+Tenemos una elasticidad negativa entre -1,75 y -0.8 aproximadamente. Una elasticidad del precio negativa nos señala que existe una relación inversa entre el precio y la cantidad demandada. Dado que la mayoría de años la elasticidad es menor que -1 (excepto en 2017 que subió un poco por encima de -1) se puede considerar que la demanda es elástica, que significa que los consumidores son sensibles a los cambios de precio y por lo tanto, un aumento significativo del precio podría provocar una disminución significativa de la demanda. Esta conclusión tiene sentido ya que el aguacate no es en USA un alimento de primera necesidad como lo sería la leche o el pan.
 
 ## 2. Análisis cohortes
 
