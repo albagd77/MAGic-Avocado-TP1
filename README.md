@@ -110,13 +110,19 @@ Para el análisis de cohortes agrupamos los datos trimestralmente y vemos la evo
 
 Observamos que son gráficas opuestas: los picos en la gráfica de 'AveragePrice' se corresponden con valles en la gráfica de 'Total Volume', y viceversa, lo cual tiene sentido.
 
-Si ahora analizamos la mismas cohortes trimestrales pero por región, 
+Ahora analizamos la mismas cohortes trimestrales pero por región.
 
 ![AveragePrice para cohortes trimestrales, por GreaterRegion](./media/04-02_quarterly_averageprice_region.png)
 
 ![Total Volume para cohortes trimestrales, por GreaterRegion](./media/04-02_quarterly_totalvolume_region.png)
 
 Aquí se puede apreciar que las regiones con más volumen de ventas son California, SouthCentral y West, para todos los trimestres.
+
+En cuanto al análisis de cohorte en función del tamaño de bolsa, vemos claramente que las de tipo Small Bags son las más vendidas. No obstante, son las más inestables también. Aunque las Large Bags se venden en menor cantidad, su volumen de venta es mucho más estable, lo que podría indicar una preferencia de compra por parte de los clientes.
+
+![Ventas por tipo de bolsa](./media/04-03_evolucion_total_volume_by_bag_size.png)
+
+# (TO DO): comentar secciones 04-04 y 04-05
 
 
 ## 5. Correlación y regresión
