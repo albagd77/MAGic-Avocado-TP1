@@ -99,9 +99,27 @@ Para simplificar la visualización, calculamos la media por año.
 
 Tenemos una elasticidad negativa entre -1,75 y -0.8 aproximadamente. Una elasticidad del precio negativa nos señala que existe una relación inversa entre el precio y la cantidad demandada. Dado que la mayoría de años la elasticidad es menor que -1 (excepto en 2017 que subió un poco por encima de -1) se puede considerar que la demanda es elástica, que significa que los consumidores son sensibles a los cambios de precio y por lo tanto, un aumento significativo del precio podría provocar una disminución significativa de la demanda. Esta conclusión tiene sentido ya que el aguacate no es en USA un alimento de primera necesidad como lo sería la leche o el pan.
 
-## 2. Análisis cohortes
 
-## 2. Correlación y regresión
+## 4. Análisis cohortes
+
+Para el análisis de cohortes agrupamos los datos trimestralmente y vemos la evolución, tanto del precio promedio como del volumen de demanda. Dado que las magnitudes de las variables son muy diferentes (para 'Total Volume' estamos hablando de cantidades alrededor de 1.2e9, mientras que para 'AveragePrice' estamos hablando de cantidades alrededor de 1.5), hemos separado los resultados en dos gráficas distintas.
+
+![AveragePrice para cohortes trimestrales](./media/04-01_quarterly_averageprice.png)
+
+![Total Volume para cohortes trimestrales](./media/04-01_quarterly_totalvolume.png)
+
+Observamos que son gráficas opuestas: los picos en la gráfica de 'AveragePrice' se corresponden con valles en la gráfica de 'Total Volume', y viceversa, lo cual tiene sentido.
+
+Si ahora analizamos la mismas cohortes trimestrales pero por región, 
+
+![AveragePrice para cohortes trimestrales, por GreaterRegion](./media/04-02_quarterly_averageprice_region.png)
+
+![Total Volume para cohortes trimestrales, por GreaterRegion](./media/04-02_quarterly_totalvolume_region.png)
+
+Aquí se puede apreciar que las regiones con más volumen de ventas son California, SouthCentral y West, para todos los trimestres.
+
+
+## 5. Correlación y regresión
 
 
 
