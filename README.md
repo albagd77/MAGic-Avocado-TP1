@@ -127,6 +127,30 @@ En cuanto al análisis de cohorte en función del tamaño de bolsa, vemos claram
 
 ## 5. Correlación y regresión
 
+Si tomamos todas las variables numéricas del DataFrame, podemos hacer un gráfico de tipo _heatmap_ para la matriz de correlación entre esos datos.
+
+![Matriz de correlación, para GreaterRegions](./media/05-01_corr_matrix_regions.png)
+
+Puesto que sabemos que Total Bags es la combinación de Small Bags, Large Bags i XLarge Bags, podemos simplificar el heatmap y dejar sólo Total Bags.
+
+![Matriz de correlación usando Total bags, para GreaterRegions](./media/05-01_corr_matrix_regions_total_bags.png)
+
+Podemos ver que el total volume está altamente correlacionado con el total bags y también la variedad 4046 y 4225. Esto es porque seguramente la venta de las variedades de aguacate (4046, 4225) definen mayormente junto con las total bags el volumen de ventas.
+
+El hecho de que estas variables esten altamente correlacionadas puede influir en el estudio dado que los modelos de regresión lineal con alta correlación entre sus variables pueden resultar altamente inestables, generar errores numéricos y un rendimiento de predicción muy deficiente. 
+
+Al analizar la dispersión entre las variables clave 'AveragePrice' y 'Total Volume', vemos un acúmulo de puntos cercanos a 0.
+
+![Dispersión entre AveragePrice y Total Volume, para GreaterRegions](./media/05-02_dispersion_averageprice_totalvolume.png)
+
+Podríamos concluir que la regresión polinómica de grado 2 es más ajustada. Sin embargo, la aproximación no es buena porque el acúmulo de puntos cercanos a 0 nos indica lo que ya habíamos observado: los volúmenes de venta de aguacates orgánicos son notablemente más bajos. Por tanto, es conveniente es estudio de orgánicos y convencionales por separado.
+
+![Dispersión entre AveragePrice y Total Volume, para GreaterRegions, separando por tipo de aguacate](./media/05-02_dispersion_averageprice_totalvolume_by_type.png)
+
+Ahora las aproximaciones, tanto lineal como polinómicas, son mejores, siempre en un rango de valores entre 1 y 2.25$ para aguacate orgánico, y entre 0.7 y 1.6$ para aguacate convencional.
+
+
+
 
 
 
