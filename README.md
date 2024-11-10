@@ -149,6 +149,24 @@ Podríamos concluir que la regresión polinómica de grado 2 es más ajustada. S
 
 Ahora las aproximaciones, tanto lineal como polinómicas, son mejores, siempre en un rango de valores entre 1 y 2.25$ para aguacate orgánico, y entre 0.7 y 1.6$ para aguacate convencional.
 
+Si ahora realizamos predicciones mensuales de 'AveragePrice' usando datos trimestrales, mediante una regresión lineal, utilizando los 2 primeros meses para precedir el tercero, obtenemos la siguiente gráfica (donde los puntos azules corresponden a los 2 primeros meses, y los naranja al tercer mes).
+
+![Predicción de AveragePrice, separando por tipo de aguacate](./media/05-03_predicciones_by_type.png)
+
+Tal y como ya se observa en la gráfica, el modelo no es muy bueno. De hecho, al evaluarlo obtenemos los siguientes valores para R^2 y MSE:
+
+<img src="./media/05-03_r2_predicciones_by_type.png" alt="Predicción de AveragePrice, separando por tipo de aguacate" width="300"/>
+
+Si hacemos predicciones trimestrales pero usando todas las variables numéricas, el modelo de predicción para 'AveragePrice' parece ser mejor:
+
+<img src="./media/05-04_r2_predicciones_all_variables.png" alt="Predicción de AveragePrice" width="300"/>
+
+
+
+
+
+
+
 
 
 
