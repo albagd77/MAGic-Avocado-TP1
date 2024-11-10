@@ -82,7 +82,9 @@ En lugar de utilizar una escala logarítmica para uniformizar la gráfica, prefe
 
 Al cuestionarnos qué podría explicar volúmenes de venta tan dispares, decidimos estudiar la relación de 'Total Volume' con 'type', y llegamos a la conclusión (obvia, por otro lado) de que los volúmenes de venta de aguacates orgánicos (correspondientes al histograma superior) son mucho menores que los volúmenes de aguacates convencionales (correspondientes al histograma inferior). Por tanto, deberemos analizar los datos para ambos tipos de forma separada.
 
+Por otro lado, del estudio por tamaño de bolsa se desprende que las bolsas pequeñas (Small Bags) se venden más que las demás (Large Bags, o bien XLarge Bags), tal y como se muestra en la siguiente gráfica.
 
+![Diagrama de barras para el tamaño de bolsa](./media/02-04_barras_bags.png)
 
 ## 3. Elasticidad del precio
 
