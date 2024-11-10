@@ -153,13 +153,48 @@ Si ahora realizamos predicciones mensuales de 'AveragePrice' usando datos trimes
 
 ![Predicción de AveragePrice, separando por tipo de aguacate](./media/05-03_predicciones_by_type.png)
 
-Tal y como ya se observa en la gráfica, el modelo no es muy bueno. De hecho, al evaluarlo obtenemos los siguientes valores para R^2 y MSE:
+Tal y como ya se observa en la gráfica, el modelo no es demasiado bueno. De hecho, al evaluarlo obtenemos los siguientes valores para R^2 y MSE:
 
 <img src="./media/05-03_r2_predicciones_by_type.png" alt="Predicción de AveragePrice, separando por tipo de aguacate" width="300"/>
 
 Si hacemos predicciones trimestrales pero usando todas las variables numéricas, el modelo de predicción para 'AveragePrice' parece ser mejor:
 
-<img src="./media/05-04_r2_predicciones_all_variables.png" alt="Predicción de AveragePrice" width="300"/>
+<img src="./media/05-04_r2_predicciones_all_variables.png" alt="Predicción de AveragePrice" width="400"/>
+
+Y si realizamos un modelo de **regresión múltiple** usando las variables numéricas 'Total Volume', '4046', '4225', '4770', y 'Total Bags' para predecir 'AveragePrice':
+
+<img src="./media/05-06_r2_predicciones_regresion_multiple.png" alt="Predicción de AveragePrice" width="400"/>
+
+Se muestran a continuación los coeficientes obtenidos para el modelo lineal y polinómico:
+
+<img src="./media/05-07_coefs_prediccion_regresion_multiple.png" alt="Coeficientes para Predicción de AveragePrice" width="400"/>
+
+Y aquí, juntamente con sus nombres:
+
+<img src="./media/05-07_features_prediccion_regresion_multiple.png" alt="Features para Predicción de AveragePrice" width="400"/>
+
+Para predecir AveragePrice en el modelo lineal vemos que el peso menos significativo es la de la columna '4770'. El resto están más o menos igualadas. Todas de manera directa excepto el Total Volume que es inversamente proporcional.
+
+En el modelo polinómico, muchos de los coeficientes son negativos, lo que indica que esas combinaciones de variables tienen un efecto negativo sobre el AveragePrice.
+Por ejemplo, el coeficiente de Total Volume - 4046 es -8.579018e-08, lo que significa que un aumento en la interacción entre el volumen total y el código 4046 reduce el valor de AveragePrice.
+
+También en el modelo polinómico, algunos coeficientes son positivos, lo que indica que el aumento en esas variables o combinaciones tiene un efecto positivo en AveragePrice.
+Por ejemplo, el coeficiente de Total Volume^2 es 4.110745e-08, lo que indica que el aumento cuadrático en el Total Volume aumenta el valor de AveragePrice, aunque el efecto es muy pequeño.
+
+# (TO DO): Incorporar y comentar 05-8
+
+Si analizamos la influencia de las ventas totales en el precio promedio, al aplicar los modelos lineal y polinómico obtenemos lo siguiente:
+
+![Predicción de AveragePrice a partir de Total Volume](./media/05-09_prediccion_averageprice_by_totalvolume.png)
+
+
+
+
+
+
+
+
+
 
 
 
