@@ -171,7 +171,7 @@ Se muestran a continuación los coeficientes obtenidos para el modelo lineal y p
 
 Y aquí, juntamente con sus nombres:
 
-<img src="./media/05-07_features_prediccion_regresion_multiple.png" alt="Features para Predicción de AveragePrice" width="400"/>
+<img src="./media/05-07_features_prediccion_regresion_multiple.png" alt="Features para Predicción de AveragePrice" width="300"/>
 
 Para predecir AveragePrice en el modelo lineal vemos que el peso menos significativo es la de la columna '4770'. El resto están más o menos igualadas. Todas de manera directa excepto el Total Volume que es inversamente proporcional.
 
