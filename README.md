@@ -173,7 +173,7 @@ Puesto que sabemos que Total Bags es la combinación de Small Bags, Large Bags i
 
 ![Matriz de correlación usando Total bags, para GreaterRegions](./media/05-01_corr_matrix_regions_total_bags.png)
 
-Podemos ver que el total volume está altamente correlacionado con el total bags y también la variedad 4046 y 4225. Esto es porque seguramente la venta de las variedades de aguacate (4046, 4225) definen mayormente junto con las total bags el volumen de ventas.
+Podemos ver que el total volume está altamente correlacionado con el total bags y también la variedad 4046 y 4225. Esto es porque seguramente la venta de las variedades de aguacate (4046, 4225) definen mayormente el volumen de ventas.
 
 El hecho de que estas variables esten altamente correlacionadas puede influir en el estudio dado que los modelos de regresión lineal con alta correlación entre sus variables pueden resultar altamente inestables, generar errores numéricos y un rendimiento de predicción muy deficiente. 
 
@@ -186,6 +186,12 @@ Podríamos concluir que la regresión polinómica de grado 2 es más ajustada. S
 ![Dispersión entre AveragePrice y Total Volume, para GreaterRegions, separando por tipo de aguacate](./media/05-02_dispersion_averageprice_totalvolume_by_type.png)
 
 Ahora las aproximaciones, tanto lineal como polinómicas, son mejores, siempre en un rango de valores entre 1 y 2.25$ para aguacate orgánico, y entre 0.7 y 1.6$ para aguacate convencional.
+
+Comentar que durante el cálculo del modelo de regersión lineal, por curiosidad, comprobamos manualmente el resultado de la función `.predict()`:
+
+![Código Python para comprobación manual](./media/05-03_comprobacion_manual.png)
+
+![Resultado de la comprobación manual](./media/05-03_comprobacion_manual_ok.png)
 
 Si ahora realizamos predicciones mensuales de 'AveragePrice' usando datos trimestrales, mediante una regresión lineal, utilizando los 2 primeros meses para precedir el tercero, obtenemos la siguiente gráfica (donde los puntos azules corresponden a los 2 primeros meses, y los naranja al tercer mes).
 
@@ -218,8 +224,6 @@ Por ejemplo, el coeficiente de Total Volume - 4046 es -8.579018e-08, lo que sign
 
 También en el modelo polinómico, algunos coeficientes son positivos, lo que indica que el aumento en esas variables o combinaciones tiene un efecto positivo en AveragePrice.
 Por ejemplo, el coeficiente de Total Volume^2 es 4.110745e-08, lo que indica que el aumento cuadrático en el Total Volume aumenta el valor de AveragePrice, aunque el efecto es muy pequeño.
-
-# (TO DO): Incorporar y comentar 05-8
 
 Si analizamos la influencia de las ventas totales en el precio promedio, al aplicar los modelos lineal y polinómico obtenemos lo siguiente:
 
