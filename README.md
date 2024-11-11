@@ -93,7 +93,15 @@ Por otro lado, del estudio por tamaño de bolsa se desprende que las bolsas pequ
 
 ![Diagrama de barras para el tamaño de bolsa](./media/02-04_barras_bags.png)
 
+Y si separamos por tipo de aguacate:
+
+![Diagrama de barras para el tamaño de bolsa, separando por tipo](./media/02-04_barras_bags_by_type.png)
+
 ## 3. Elasticidad del precio
+
+Primeramente, observamos la evolución anual del precio para tener una primera impresión.
+
+![Precio promedio anual](./media/02-05_precio_promedio_anual.png)
 
 Para estudiar la elasticidad de precios, partimos de nuevo únicamente de las filas correspondientes a **GreaterRegions**. 
 
@@ -105,6 +113,19 @@ Para simplificar la visualización, calculamos la media por año.
 
 Tenemos una elasticidad negativa entre -1,75 y -0.8 aproximadamente. Una elasticidad del precio negativa nos señala que existe una relación inversa entre el precio y la cantidad demandada. Dado que la mayoría de años la elasticidad es menor que -1 (excepto en 2017 que subió un poco por encima de -1) se puede considerar que la demanda es elástica, que significa que los consumidores son sensibles a los cambios de precio y por lo tanto, un aumento significativo del precio podría provocar una disminución significativa de la demanda. Esta conclusión tiene sentido ya que el aguacate no es en USA un alimento de primera necesidad como lo sería la leche o el pan.
 
+Si ahora estudiamos ambos tipos por separado, vemos que los precios medios de convencional y orgánico son muy distintos.
+
+![Precio promedio anual por tipo](./media/02-05_precio_promedio_anual_by_type.png)
+
+Si efectuamos el estudio de elasticidad:
+
+![Elasticidad anual de precios por tipo](./media/03-01_elasticidad_anual_by_type.png)
+
+Vemos que la elasticidad es distinta para los tipos de aguacate sobretodo a partir de 2017 en que para los organicos la elasticidad se acerca a cero y por el contrario los convencionales se aleja hasta alcanzar más allà de -2. Este cambio en 2017 sugiere una divergencia de comportamiento de consumo entre los dos tipos de aguacates: los consumidores de productos orgánicos parecen cada vez menos sensibles al precio, mientras que los consumidores de convencionales son mucho más sensibles. 
+
+Los consumidores de aguacates orgánicos tienden a ser más inelásticos, mostrando lealtad a este segmento sin importar el precio.
+
+Los consumidores de aguacates convencionales son más sensibles al precio, quizás porque no ven la misma necesidad de consumir aguacates.
 
 ## 4. Análisis cohortes
 
