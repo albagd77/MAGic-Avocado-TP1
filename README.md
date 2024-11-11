@@ -124,12 +124,23 @@ Ahora analizamos la mismas cohortes trimestrales pero por región.
 
 Aquí se puede apreciar que las regiones con más volumen de ventas son California, SouthCentral y West, para todos los trimestres.
 
+De hecho, si en lugar de tomar sólo **GreaterRegions** como hemos hecho hasta ahora, tomamos todos los registros del DataFrame (a excepción de TotalUS), y filtramos las filas para excluir el 2018 --que está incompleto-- y que así la gráfica no decaiga bruscamente, podemos observar claramente que los volúmenes de California, SouthCentral y West destacan muy por encima del resto.
+
+![Gráfico útil para identificar cohortes](./media/04-05_cohortes_por_total_volume.png)
+
+Al identificar cada una de las tres franjas que se observan en la gráfica:
+
+<img src="./media/04-05_cohortes_top_med_low.png" alt="Cohortes perfectamente separadas" width="500"/>
+
+Obtenemos los siguientes resultados:
+
+<img src="./media/04-05_cohortes_region_list.png" alt="Lista de 'region' incluidas en cada cohorte" width="700"/>
+
+Así, como dato notorio, observamos que, aunque Los Ángeles es una ciudad, por volumen de ventas queda incluido en la cohorte de volúmenes medios.
+
 En cuanto al análisis de cohorte en función del tamaño de bolsa, vemos claramente que las de tipo Small Bags son las más vendidas. No obstante, son las más inestables también. Aunque las Large Bags se venden en menor cantidad, su volumen de venta es mucho más estable, lo que podría indicar una preferencia de compra por parte de los clientes.
 
 ![Ventas por tipo de bolsa](./media/04-03_evolucion_total_volume_by_bag_size.png)
-
-# (TO DO): comentar secciones 04-04 y 04-05
-
 
 ## 5. Correlación y regresión
 
