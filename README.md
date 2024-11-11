@@ -4,7 +4,7 @@ Mini Proyecto para el curso Data Scientist impartido por la [UOC](https://www.uo
 
 Componentes del equipo: 
  - Alba Godoy Domínguez
- - Gustavo Chávez
+ - Gustavo Chavez
  - Montserrat López Ibáñez
 
 ## EDA (Exploratory Data Analysis)
@@ -47,13 +47,17 @@ Otro modo de ver esas diferencias entre regiones es mediande un boxplot anual po
 
 ![Boxplot anual de precios por GreaterRegion](./media/02-02_boxplot_precios_anuales_region.png)
 
-# (TO DO): gráfica y comentar apartado 01-03
+Finalmente, para quedarnos con una idea global de evolución de precios, hemos graficado el precio anual para todas las regiones en conjunto.
+
+![Evolución anual de precios, all GreaterRegions](./media/01-03_estacionalidad_mensual_all_regions.png)
+
+Como nota de atención, tener en cuenta que en las gráficas anteriores no hemos distinguido entre aguacates orgánicos y convencionales. Pero esto lo veremos en detalle más adelante.
+
+## 2. Gráficos para visualización
 
 Al evaluar la característica 'Total Volume', filtrando de nuevo por **GreaterRegions**, para ver la tendencia de ventas a lo largo del tiempo, observamos caídas en el volumen de aguacates vendidos just a finales de año, lo cual concuerda con la subida de precio que habíamos observado anteriormente en octubre/noviembre.
 
 ![Tendencia de ventas por GreaterRegion](./media/01-04_ventas_por_region.png)
-
-## 2. Gráficos para visualización
 
 Al analizar la relación entre las variables 'Total Volume' y 'region', mediante una gráfica de violín, enseguida observamos una anomalía:
 
@@ -79,7 +83,11 @@ En lugar de utilizar una escala logarítmica para uniformizar la gráfica, prefe
 
 ![Histograma de 'Total Volume' para GreaterRegions](./media/02-03_histograma_por_partes.png)
 
-Al cuestionarnos qué podría explicar volúmenes de venta tan dispares, decidimos estudiar la relación de 'Total Volume' con 'type', y llegamos a la conclusión (obvia, por otro lado) de que los volúmenes de venta de aguacates orgánicos (correspondientes al histograma superior) son mucho menores que los volúmenes de aguacates convencionales (correspondientes al histograma inferior). Por tanto, deberemos analizar los datos para ambos tipos de forma separada.
+Al cuestionarnos qué podría explicar volúmenes de venta tan dispares, decidimos estudiar la relación de 'Total Volume' con 'type', y llegamos a la conclusión (obvia, por otro lado) de que los volúmenes de venta de aguacates orgánicos (correspondientes al histograma superior) son mucho menores que los volúmenes de aguacates convencionales (correspondientes al histograma inferior).
+
+![Comprobación de que no hay registros de aguacates organicos con Total Volume superior a 10^6](./media/02-03_comprobacion_volumenes_organico_vs_convencional.png)
+
+Por tanto, deberemos analizar los datos para ambos tipos de forma separada.
 
 Por otro lado, del estudio por tamaño de bolsa se desprende que las bolsas pequeñas (Small Bags) se venden más que las demás (Large Bags, o bien XLarge Bags), tal y como se muestra en la siguiente gráfica.
 
@@ -90,8 +98,6 @@ Por otro lado, del estudio por tamaño de bolsa se desprende que las bolsas pequ
 Para estudiar la elasticidad de precios, partimos de nuevo únicamente de las filas correspondientes a **GreaterRegions**. 
 
 Al aplicar la función `pct_change()` a las variables 'Total Volume' y 'AveragePrice', de las 2703 filas iniciales para GreaterRegions, obtenemos 1448 filas con una variación porcentual inferior al 0.1%. Esto puede indicar períodos con estabilidad en los precios.
-
-![Elasticidad de precios, por año, en GreaterRegions](./media/03-01_elasticidad_anual_regions.png)
 
 Para simplificar la visualización, calculamos la media por año.
 
