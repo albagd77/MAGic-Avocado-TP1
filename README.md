@@ -163,6 +163,10 @@ En cuanto al análisis de cohorte en función del tamaño de bolsa, vemos claram
 
 ![Ventas por tipo de bolsa](./media/04-03_evolucion_total_volume_by_bag_size.png)
 
+Y si separamos por tipo de aguacate:
+
+![Ventas por tipo de bolsa, y tipo de aguacate](./media/04-03_evolucion_total_volume_by_bag_size_por_tipo.png)
+
 ## 5. Correlación y regresión
 
 Si tomamos todas las variables numéricas del DataFrame, podemos hacer un gráfico de tipo _heatmap_ para la matriz de correlación entre esos datos.
