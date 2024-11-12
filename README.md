@@ -197,7 +197,7 @@ Comentar que durante el cálculo del modelo de regersión lineal, por curiosidad
 
 ![Resultado de la comprobación manual](./media/05-03_comprobacion_manual_ok.png)
 
-Si ahora realizamos predicciones mensuales de 'AveragePrice' usando datos trimestrales, mediante una regresión lineal, utilizando los 2 primeros meses para precedir el tercero, obtenemos la siguiente gráfica (donde los puntos azules corresponden a los 2 primeros meses, y los naranja al tercer mes).
+Si ahora realizamos predicciones mensuales de 'AveragePrice' usando datos trimestrales, mediante una regresión lineal, utilizando los 2 primeros meses para precedir el tercero, obtenemos la siguiente gráfica (donde los puntos oscuros corresponden a los 2 primeros meses, y los claros al tercer mes).
 
 ![Predicción de AveragePrice, separando por tipo de aguacate](./media/05-03_predicciones_by_type.png)
 
