@@ -233,7 +233,9 @@ Si analizamos la influencia de las ventas totales en el precio promedio, al apli
 
 ![Predicción de AveragePrice a partir de Total Volume](./media/05-09_prediccion_averageprice_by_totalvolume.png)
 
+## Futuribles
 
+A parte de profundizar más en lo que es la regresión en sí misma y las predicciones, un aspecto que no nos ha dado tiempo a explorar demasiado es el **calibre** de aguacate (variables `4046`,	`4225` y `4770`). Seguro que hubiéramos obtenido observaciones interesantes ya que, al parecer, el aguacate es un tipo de cultivo peculiar porque un año da aguacates de calibre pequeño y al siguiente aguacates de calibre grande.
 
 
 
