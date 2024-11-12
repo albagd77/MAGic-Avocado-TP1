@@ -177,9 +177,9 @@ Puesto que sabemos que Total Bags es la combinación de Small Bags, Large Bags i
 
 ![Matriz de correlación usando Total bags, para GreaterRegions](./media/05-01_corr_matrix_regions_total_bags.png)
 
-Podemos ver que el total volume está altamente correlacionado con el total bags y también la variedad 4046 y 4225. Esto es porque seguramente la venta de las variedades de aguacate (4046, 4225) definen mayormente el volumen de ventas.
+Podemos ver que el `Total Volume` está altamente correlacionado con el `Total Bags` y también con la características de calibre `4046` y `4225`. Esto es porque seguramente la venta de aguacates de los calibres 4046 y 4225 definen mayormente el volumen de ventas.
 
-El hecho de que estas variables esten altamente correlacionadas puede influir en el estudio dado que los modelos de regresión lineal con alta correlación entre sus variables pueden resultar altamente inestables, generar errores numéricos y un rendimiento de predicción muy deficiente. 
+El hecho de que estas variables estén altamente correlacionadas puede influir en el estudio dado que los modelos de regresión lineal con alta correlación entre sus variables pueden resultar altamente inestables, generar errores numéricos y un rendimiento de predicción muy deficiente. 
 
 Al analizar la dispersión entre las variables clave 'AveragePrice' y 'Total Volume', vemos un acúmulo de puntos cercanos a 0.
 
