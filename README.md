@@ -185,7 +185,7 @@ Al analizar la dispersión entre las variables clave 'AveragePrice' y 'Total Vol
 
 ![Dispersión entre AveragePrice y Total Volume, para GreaterRegions](./media/05-02_dispersion_averageprice_totalvolume.png)
 
-Podríamos concluir que la regresión polinómica de grado 2 es más ajustada. Sin embargo, la aproximación no es buena porque el acúmulo de puntos cercanos a 0 nos indica lo que ya habíamos observado: los volúmenes de venta de aguacates orgánicos son notablemente más bajos. Por tanto, es conveniente es estudio de orgánicos y convencionales por separado.
+Podríamos concluir que la regresión polinómica de grado 2 es más ajustada. Sin embargo, la aproximación no es buena porque el acúmulo de puntos cercanos a 0 nos indica lo que ya habíamos observado: los volúmenes de venta de aguacates orgánicos son notablemente más bajos. Por tanto, es conveniente el estudio de orgánicos y convencionales por separado.
 
 ![Dispersión entre AveragePrice y Total Volume, para GreaterRegions, separando por tipo de aguacate](./media/05-02_dispersion_averageprice_totalvolume_by_type.png)
 
